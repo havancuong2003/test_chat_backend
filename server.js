@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 5000;
 // Cấu hình CORS cho Express
 app.use(
     cors({
-        origin: "http://localhost:5173", // Domain của frontend
+        origin: ["http://localhost:5173","https://test-chat-frontend.vercel.app"] // Domain của frontend
         methods: ["GET", "POST"],
         allowedHeaders: ["Content-Type"],
         credentials: true, // Cho phép gửi cookies và token
